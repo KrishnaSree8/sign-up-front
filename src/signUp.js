@@ -13,7 +13,7 @@ class SignUp extends Component{
   }
 
   onSubmit = (values) =>{
-    axios.post('http://localhost:4000/app/signup', values)
+    axios.post('https://gentle-atoll-08559.herokuapp.com/app/signup', values)
     .then(response => {
       if(response.data.errors){
         console.log(response.data.errors)
